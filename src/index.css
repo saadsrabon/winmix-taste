@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Warm, premium palette inspired by spices & heritage */
+    --background: 40 33% 98%;
+    --foreground: 25 30% 12%;
+
+    --card: 40 25% 96%;
+    --card-foreground: 25 30% 12%;
+
+    --popover: 40 33% 98%;
+    --popover-foreground: 25 30% 12%;
+
+    /* Saffron Gold - Primary brand color */
+    --primary: 18 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Dark Navy Blue - Secondary */
+    --secondary: 220 90% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Warm Cream - Muted backgrounds */
+    --muted: 40 20% 94%;
+    --muted-foreground: 25 20% 45%;
+
+    /* Spice Red - Accent */
+    --accent: 12 75% 50%;
+    --accent-foreground: 40 33% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 25% 88%;
+    --input: 35 25% 88%;
+    --ring: 38 85% 55%;
+
+    --radius: 0.5rem;
+
+    /* Custom brand colors */
+    --saffron: 18 100% 55%;
+    --saffron-light: 18 100% 65%;
+    --saffron-dark: 18 100% 45%;
+    --turmeric: 45 90% 50%;
+    --chili: 12 75% 50%;
+    --earth: 25 35% 25%;
+    --earth-light: 25 25% 40%;
+    --rice-green: 95 25% 45%;
+    --river: 195 35% 45%;
+    --cream: 40 33% 98%;
+    --cream-dark: 38 25% 92%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(40 33% 98%) 0%, hsl(38 30% 94%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(18 100% 55% / 0.1) 0%, transparent 100%);
+    --gradient-spice: linear-gradient(135deg, hsl(18 100% 55%) 0%, hsl(12 75% 50%) 100%);
+    --gradient-earth: linear-gradient(135deg, hsl(220 90% 20%) 0%, hsl(220 80% 30%) 100%);
+
+    /* Typography */
+    --font-display: 'Roboto', system-ui, -apple-system, sans-serif;
+    --font-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+    --font-bengali: 'Noto Serif Bengali', serif;
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 12% / 0.08);
+    --shadow-warm: 0 8px 30px -8px hsl(38 85% 55% / 0.25);
+    --shadow-elevated: 0 20px 50px -15px hsl(25 30% 12% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 25 28% 12%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 25 30% 8%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 18 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 90% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 25% 18%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 12 75% 55%;
+    --accent-foreground: 40 33% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 38 85% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .text-display {
+    font-family: var(--font-display);
+    @apply tracking-tight;
+  }
+
+  .text-body {
+    font-family: var(--font-body);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-spice);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-6;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .divider-ornament {
+    @apply relative flex items-center justify-center gap-4;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    @apply h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
