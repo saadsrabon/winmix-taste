@@ -7,7 +7,7 @@ const BrandSection = () => {
   const { language } = useLanguage();
 
   return (
-    <section className="relative pt-4 md:pt-4 overflow-hidden">
+    <section className="relative pt-4 md:pt-8 overflow-hidden">
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center px-6 ">
         <div className="max-w-8xl mx-auto w-full space-y-12">
@@ -20,11 +20,11 @@ const BrandSection = () => {
             className="text-center space-y-6 pt-48"
           >
             {/* Logo */}
-            <img 
+            {/* <img 
               src={logo} 
               alt="Winmix Logo" 
               className="w-32 h-auto md:w-96 lg:w-56 object-contain mx-auto"
-            />
+            /> */}
             
             {/* Text */}
             <div className="space-y-4 max-w-4xl mx-auto">

@@ -36,15 +36,15 @@ const Header = () => {
       <div className="fixed top-0 left-0 right-0 z-50 bg-secondary text-secondary-foreground py-2 overflow-hidden">
         <div className="flex animate-marquee">
           <span className="whitespace-nowrap mx-4">
-             For Distribution Call: +88 01819993300
+             For Distribution Call: +88 01819993300 Hotline
 
              
           </span>
           <span className="whitespace-nowrap mx-4">
-             For Distribution Call: +88 01819993300  
+             For Distribution Call: +88 01819993300 Hotline 
           </span>
           <span className="whitespace-nowrap mx-4">
-             For Distribution Call: +88 01819993300
+             For Distribution Call: +88 01819993300 Hotline
           </span>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Header = () => {
           <img 
             src={logo} 
             alt="Winmix Logo" 
-            className="h-12    object-contain"
+            className=""
           />
           
         </a>
@@ -106,19 +106,19 @@ const Header = () => {
           
           <Link to="/contact">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              {language === 'en' ? 'Get Distributor' : 'ডিস্ট্রিবিউটর হন'}
+              {language === 'en' ? 'Become a Distributor' : 'ডিস্ট্রিবিউটর হন'}
             </Button>
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center gap-3">
-          <button
+          {/* <button
             onClick={toggleLanguage}
             className="p-2 text-foreground"
           >
             <Globe size={20} />
-          </button>
+          </button> */}
           <button
             className="p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -130,7 +130,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md border-t border-border animate-fade-up">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-background backdrop-blur-md border-t border-border animate-fade-up">
           <nav className="container-wide py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               link.href.startsWith('/') ? (
@@ -155,7 +155,7 @@ const Header = () => {
             ))}
             <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
               <Button size="lg" className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-                {language === 'en' ? 'Get Distributor' : 'ডিস্ট্রিবিউটর হন'}
+                {language === 'en' ? 'Become a Distributor' : 'ডিস্ট্রিবিউটর হন'}
               </Button>
             </Link>
           </nav>

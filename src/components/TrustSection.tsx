@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import qualitySpicesImg from '@/assets/quality-spices.jpg';
-import logo2 from '@/assets/logo2.png';
+import logo2 from '@/assets/lgog2.png';
 const stats = [
   { valueEn: '15+', valueBn: '১৫+', labelEn: 'Years Experience', labelBn: 'বছরের অভিজ্ঞতা' },
   { valueEn: '500+', valueBn: '৫০০+', labelEn: 'Products', labelBn: 'পণ্য' },
@@ -46,7 +46,7 @@ const TrustSection = () => {
 
             {/* Logo/Badge */}
             <div className="inline-flex items-center gap-3 px-4 py-3 bg-background rounded-lg border border-border">
-              <div className="w-24 h-10 flex items-center justify-center">
+              <div className="w-24 h-24 flex items-center justify-center">
                 <img src={logo2} alt="" />
               </div>
               <div className="-ml-8 pr-4">
