@@ -60,6 +60,9 @@ import baking from '@/assets/baking.png';
 import seasoning from '@/assets/featured/seasoning.png';
 import foodessene from '@/assets/featured/foodessence.png';
 import masala from '@/assets/featured/masala.png';
+import foodcolor from '@/assets/featured/foodcolor.png';
+import chocolate from '@/assets/featured/chocolate.png';
+import snacksbeverages from '@/assets/featured/snacks.png';
 export const categories: Category[] = [
   {
   id: 'baking',
@@ -81,7 +84,7 @@ export const categories: Category[] = [
   nameBn: 'খাদ্য রঙ',
   descriptionEn: 'Food coloring products',
   descriptionBn: 'খাদ্য রঙের পণ্য',
-  icon: foodessene,
+  icon: foodcolor,
   products: [
     { id: 'blue-food-color', nameEn: 'Blue Food Color', nameBn: 'নীল খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: BlueFoodColorImg, price: '৳30' },
     { id: 'chocolate-food-color', nameEn: 'Chocolate Food Color', nameBn: 'চকলেট খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: ChocolateFoodColorImg, price: '৳35' },
@@ -158,7 +161,7 @@ export const categories: Category[] = [
   nameBn: 'চকলেট',
   descriptionEn: 'Chocolate products',
   descriptionBn: 'চকলেট পণ্য',
-  icon: seasoning,
+  icon: chocolate,
   products: [
     { id: 'winmix-choco-choco', nameEn: 'Choco Choco', nameBn: 'চকো চকো', category: 'chocolate', brand: 'Winmix', image: WinmixChocoChocoImg, price: '৳85' },
   ]
@@ -169,7 +172,7 @@ export const categories: Category[] = [
   nameBn: 'স্ন্যাকস ও পানীয়',
   descriptionEn: 'Beverages',
   descriptionBn: 'পানীয়',
-  icon: seasoning,
+  icon: snacksbeverages,
   products: [
     { id: 'gold-tea', nameEn: 'Winmix Gold Tea 400gm', nameBn: 'উইনমিক্স গোল্ড টি', category: 'snacks-beverages', brand: 'Winmix', image: GoldTeaImg, price: '৳150', featured: true },
   ]
