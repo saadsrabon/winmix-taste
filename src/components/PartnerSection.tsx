@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { StoreIcon, DeliveryIcon, PartnershipIcon } from "@/components/icons/CustomIcons";
 import brandImage from '@/assets/brand image.webp';
+import winmixtest from '@/assets/winmixtest.png';
 import win from '@/assets/win.png';
 import cook from '@/assets/cook.png';
 import { Link } from "react-router-dom";
@@ -64,11 +65,11 @@ const PartnerSection = () => {
           </div>
           <h2 className="font-display text-display-md md:text-display-lg font-bold mb-6">
             {t("partner.title.1")}{" "}
-            <span className="text-primary italic">{t("partner.title.2")}</span>
+            <img src={winmixtest} alt="" className="h-20 inline " />
           </h2>
           <div className="flex justify-center items-center gap-4">
-            <img src={win} alt="Winmix Brand" className="w-xl max-w-md mx-auto" />
             <img src={cook} alt="Winmix Brand" className="w-xl max-w-md mx-auto" />
+            <img src={win} alt="Winmix Brand" className="w-xl max-w-md mx-auto" />
           </div>
           <p className="text-body-lg   text-muted-foreground">
             {t("partner.subtitle")}
