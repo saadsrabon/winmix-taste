@@ -57,8 +57,9 @@ import whiteVinegarImg from '@/assets/main/white vinegar.jpeg';
 
 // Category icons
 import baking from '@/assets/baking.png';
-import seasoning from '@/assets/seasoning.png';
-
+import seasoning from '@/assets/featured/seasoning.png';
+import foodessene from '@/assets/featured/foodessence.png';
+import masala from '@/assets/featured/masala.png';
 export const categories: Category[] = [
   {
   id: 'baking',
@@ -80,7 +81,7 @@ export const categories: Category[] = [
   nameBn: 'খাদ্য রঙ',
   descriptionEn: 'Food coloring products',
   descriptionBn: 'খাদ্য রঙের পণ্য',
-  icon: seasoning,
+  icon: foodessene,
   products: [
     { id: 'blue-food-color', nameEn: 'Blue Food Color', nameBn: 'নীল খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: BlueFoodColorImg, price: '৳30' },
     { id: 'chocolate-food-color', nameEn: 'Chocolate Food Color', nameBn: 'চকলেট খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: ChocolateFoodColorImg, price: '৳35' },
@@ -96,7 +97,7 @@ export const categories: Category[] = [
   nameBn: 'ফুড এসেন্স',
   descriptionEn: 'Aromatic food essences',
   descriptionBn: 'সুগন্ধি ফুড এসেন্স',
-  icon: seasoning,
+  icon: foodessene,
   products: [
     { id: 'banana-food-essence', nameEn: 'Banana Essence', nameBn: 'কলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: BananaFoodEssenceImg, price: '৳45' },
     { id: 'biriyani-food-essence', nameEn: 'Biriyani Essence', nameBn: 'বিরিয়ানি এসেন্স', category: 'food-essence', brand: 'Cookwell', image: BiriyaniFoodEssenceImg, price: '৳40', featured: true },
@@ -117,7 +118,7 @@ export const categories: Category[] = [
   nameBn: 'রেডি মিক্স মসলা',
   descriptionEn: 'Ready-made spice mixes',
   descriptionBn: 'রান্নার জন্য প্রস্তুত মসলা',
-  icon: seasoning,
+  icon: masala,
   products: [
     { id: 'bar-b-q-masala', nameEn: 'B-B-Q Masala', nameBn: 'বারবিকিউ মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: BarBQMasalaImg, price: '৳85' },
     { id: 'biriyani-masala', nameEn: 'Biriyani Masala', nameBn: 'বিরিয়ানি মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: BiriyaniMasalaImg, price: '৳95', featured: true },

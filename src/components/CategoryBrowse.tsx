@@ -9,6 +9,7 @@ import foodessenceImg from '@/assets/featured/foodessence.png';
 import masalaImg from '@/assets/featured/masala.png';
 import seasoningImg from '@/assets/featured/seasoning.png';
 import spicesImg from '@/assets/featured/spices.png';
+import { useNavigate } from 'react-router-dom';
 
 // Map categories to featured images
 const categoryImages: { [key: string]: string } = {
@@ -21,7 +22,7 @@ const categoryImages: { [key: string]: string } = {
 
 const CategoryBrowse = () => {
   const { language } = useLanguage();
-
+  const navigate = useNavigate()
   return (
     <section className="py-16 bg-muted/30" id="categories">
       <div className="container-wide">
@@ -40,9 +41,10 @@ const CategoryBrowse = () => {
         {/* Category Grid */}
         <div className="flex flex-wrap justify-center gap-8 md:gap-12">
           {categories.filter(category => category.id !== 'specialty').map((category, index) => (
-            <motion.a
+            <motion.div
               key={category.id}
-              href={`#${category.id}`}
+              whileHover={{ scale: 1.05 }}
+              onClick={()=>navigate(`/products?category=${category.id}`)}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -62,7 +64,7 @@ const CategoryBrowse = () => {
               <span className="text-sm md:text-base font-medium text-foreground group-hover:text-primary transition-colors text-center">
                 {language === 'en' ? category.nameEn : category.nameBn}
               </span>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>

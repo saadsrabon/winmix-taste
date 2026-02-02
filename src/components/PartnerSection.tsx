@@ -68,8 +68,8 @@ const PartnerSection = () => {
             <img src={winmixtest} alt="" className="h-20 inline " />
           </h2>
           <div className="flex justify-center items-center gap-4">
-            <img src={cook} alt="Winmix Brand" className="w-xl max-w-md mx-auto" />
-            <img src={win} alt="Winmix Brand" className="w-xl max-w-md mx-auto" />
+            <img src={cook} alt="Winmix Brand" className="w-24 md:w-xl md:max-w-md md:mx-auto" />
+            <img src={win} alt="Winmix Brand" className="w-24 md:w-xl md:max-w-md md:mx-auto" />
           </div>
           <p className="text-body-lg   text-muted-foreground">
             {t("partner.subtitle")}

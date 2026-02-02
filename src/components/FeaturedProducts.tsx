@@ -14,6 +14,7 @@ import custardImg from '@/assets/feat/custard.png';
 import sauceImg from '@/assets/feat/sauce.png';
 import tastysaltImg from '@/assets/feat/tastysalt.png';
 import goldteaImage from '@/assets/feat/gold tea.png';
+import { Link } from 'react-router-dom';
 
 // Create featured products list based on image names from /feat folder
 const featuredProducts = [
@@ -120,13 +121,13 @@ const FeaturedProducts = () => {
               {language === 'en' ? 'Featured Products' : 'বৈশিষ্ট্যযুক্ত পণ্য'}
             </h2>
           </div>
-          <a 
-            href="#products" 
+          <Link
+            to="/products" 
             className="hidden md:flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
           >
             {language === 'en' ? 'View all products' : 'সব পণ্য দেখুন'}
             <ChevronRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
 
         {/* Scrolling Carousel */}
@@ -173,13 +174,13 @@ const FeaturedProducts = () => {
 
         {/* Mobile View All Link */}
         <div className="md:hidden mt-8 text-center">
-          <a 
-            href="#products" 
+          <Link
+            to="/products" 
             className="inline-flex items-center gap-2 text-primary font-medium"
           >
             {language === 'en' ? 'View all products' : 'সব পণ্য দেখুন'}
             <ChevronRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
