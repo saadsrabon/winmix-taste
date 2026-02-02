@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { categories, getAllProducts, type Product } from '@/data/products';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { ChevronRight } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
 
 const ProductCard = ({ product, index }: { product: Product; index: number }) => {
   const { language } = useLanguage();
@@ -45,7 +46,11 @@ const ProductCard = ({ product, index }: { product: Product; index: number }) =>
 
 const ProductsSection = () => {
   const { language } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [searchParams] = useSearchParams();
+const categoryFromURL = searchParams.get('category') || 'all';
+
+ const [activeCategory, setActiveCategory] = useState(categoryFromURL);
+
   const [showAll, setShowAll] = useState(false);
   
   const getFilteredProducts = () => {
@@ -59,7 +64,15 @@ const ProductsSection = () => {
   const filteredProducts = getFilteredProducts();
   const displayProducts = showAll ? filteredProducts : filteredProducts.slice(0, 9);
   const hasMoreProducts = filteredProducts.length > 9;
+useEffect(() => {
+  setActiveCategory(categoryFromURL);
+  setShowAll(false); // reset pagination on category change
+}, [categoryFromURL]);
 
+useEffect(()=>{
+  /// start from top
+  
+},[])
   return (
     <section className="py-16 my-24 bg-background" id="products">
       <div className="container-wide">
@@ -76,7 +89,9 @@ const ProductsSection = () => {
         </div>
 
         {/* Category Tabs */}
-        <Tabs defaultValue="all" className="w-full" onValueChange={setActiveCategory}>
+        <Tabs value={activeCategory}
+  onValueChange={setActiveCategory}
+  className="w-full">
           <div className="flex justify-center mb-8 overflow-x-auto pb-2">
             <TabsList className="bg-muted/50 p-1 rounded-full">
               <TabsTrigger 

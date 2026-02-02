@@ -2,12 +2,12 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import qualitySpicesImg from '@/assets/quality-spices.jpg';
 import logo2 from '@/assets/lgog2.png';
-const stats = [
-  { valueEn: '15+', valueBn: '১৫+', labelEn: 'Years Experience', labelBn: 'বছরের অভিজ্ঞতা' },
-  { valueEn: '500+', valueBn: '৫০০+', labelEn: 'Products', labelBn: 'পণ্য' },
-  { valueEn: '10K+', valueBn: '১০হা+', labelEn: 'Happy Customers', labelBn: 'সন্তুষ্ট গ্রাহক' },
-  { valueEn: '50+', valueBn: '৫০+', labelEn: 'Distributors', labelBn: 'পরিবেশক' },
-];
+// const stats = [
+//   { valueEn: '15+', valueBn: '১৫+', labelEn: 'Years Experience', labelBn: 'বছরের অভিজ্ঞতা' },
+//   { valueEn: '500+', valueBn: '৫০০+', labelEn: 'Products', labelBn: 'পণ্য' },
+//   { valueEn: '10K+', valueBn: '১০হা+', labelEn: 'Happy Customers', labelBn: 'সন্তুষ্ট গ্রাহক' },
+//   { valueEn: '50+', valueBn: '৫০+', labelEn: 'Distributors', labelBn: 'পরিবেশক' },
+// ];
 
 const TrustSection = () => {
   const { language } = useLanguage();
@@ -83,7 +83,7 @@ const TrustSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -101,7 +101,7 @@ const TrustSection = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

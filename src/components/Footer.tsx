@@ -49,13 +49,17 @@ const Footer = () => {
               {language === 'en' ? 'Products' : 'পণ্য'}
             </h4>
             <ul className="space-y-3">
-              {categories.map(category => (
-                <li key={category.id}>
-                  <Link to="/products" className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm">
-                    {language === 'en' ? category.nameEn : category.nameBn}
-                  </Link>
-                </li>
-              ))}
+             {categories.map(category => (
+  <li key={category.id}>
+    <Link
+      to={`/products?category=${category.id}`}
+      className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
+    >
+      {language === 'en' ? category.nameEn : category.nameBn}
+    </Link>
+  </li>
+))}
+
             </ul>
           </div>
 

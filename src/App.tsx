@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
 import ProductsSection from "./components/ProductsSection";
+import ScrollToTop from "./lib/scrollTotop";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <div className="min-h-screen bg-background">
             <Header />
             <main>
+              <ScrollToTop/>
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/contact" element={<ContactPage />} />
@@ -32,6 +34,7 @@ const App = () => (
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
+            
             </main>
             <Footer />
           </div>
