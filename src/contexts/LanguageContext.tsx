@@ -99,7 +99,7 @@ const translations: Record<Language, Record<string, string>> = {
     'partner.label': 'Grow With Us',
     'partner.title.1': 'Partner With',
     'partner.title.2': 'Winmix',
-    'partner.subtitle': 'Join Bangladesh\'s fastest-growing food brand. Together, we can bring quality and trust to every kitchen in the nation.',
+    'partner.subtitle': 'Join Bangladesh\'s fastest-growing food brands. Together, we can bring quality and trust to every kitchen in the nation.',
     'partner.retail.title': 'Retail Partners',
     'partner.retail.desc': 'Bring Winmix products to your store shelves and delight your customers with premium quality.',
     'partner.retail.cta': 'Become a Retailer',
