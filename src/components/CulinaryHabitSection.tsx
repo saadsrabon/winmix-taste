@@ -34,7 +34,7 @@ const CulinaryHabitSection = () => {
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              After Dhaka became the capital of East Bengal, Persian, Turkish and Arabic-influenced dishes became popular. Black pepper and Chui-Jhal were used to add spiciness before chili was introduced from the Americas.
+              After Dhaka became the capital of East Bengal, Persian, Turkish and Arabic-influenced dishes became popular. 
             </p>
           </div>
         </motion.div>

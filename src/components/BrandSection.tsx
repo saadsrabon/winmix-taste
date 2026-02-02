@@ -30,14 +30,14 @@ const BrandSection = () => {
             <div className="space-y-4 max-w-4xl mx-auto">
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
                 {language === 'en' ? (
-                  <>Where Every <span className="text-primary">Mix Wins</span></>
+                  <> <span className="text-primary"> Where Every Mix Wins</span></>
                 ) : (
                   <>যেখানে প্রতিটি <span className="text-primary">মিক্স জেতে</span></>
                 )}
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                 {language === 'en' 
-                  ? 'Premium quality ingredients that transform ordinary cooking into extraordinary culinary experiences. Trust Winmix for excellence in every meal.'
+                  ? 'Premium quality Premium quality food products that brings happiness & goodness in life.'
                   : 'প্রিমিয়াম মানের উপাদান যা সাধারণ রান্নাকে অসাধারণ কালিনারি অভিজ্ঞতায় পরিণত করে। প্রতিটি খাবারের জন্য উইনমিক্সের উৎকর্ষের উপর আস্থা রাখুন।'
                 }
               </p>

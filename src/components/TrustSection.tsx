@@ -35,7 +35,7 @@ const TrustSection = () => {
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               {language === 'en' 
-                ? 'Winmix Essential Limited has been serving Bangladesh with premium quality food ingredients since 2025. We are committed to delivering pure, authentic products that help you create delicious meals for your family.'
+                ? 'Established in July 2025, WINMIX ESSENTIAL PRODUCTS is dedicated to bringing natural goodness and delicate flavor to the culinary habits of Bangladesh. We serve food lovers who demand fineness and uncompromising quality in every bite. Our ultimate goal is to reach every household in the nation, satisfying the diverse taste buds of the people while becoming the most trusted partner for both home cooks and professionals. From our premium range of culinary essentials like Baking Powder, Corn Flour, and specialty spices to our indulgent retail chocolate bars, we ensure that every product delivers an extraordinary experience. Whether you are creating a kitchen masterpiece or enjoying a sweet moment of delight, WINMIX is where every mix wins.'
                 : 'উইনমিক্স এসেনশিয়াল লিমিটেড ২০২৫ সাল থেকে প্রিমিয়াম মানের খাদ্য উপকরণ দিয়ে বাংলাদেশের সেবা করছে। আমরা বিশুদ্ধ, খাঁটি পণ্য সরবরাহ করতে প্রতিশ্রুতিবদ্ধ যা আপনাকে আপনার পরিবারের জন্য সুস্বাদু খাবার তৈরি করতে সাহায্য করে।'}
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
@@ -45,17 +45,20 @@ const TrustSection = () => {
             </p>
 
             {/* Logo/Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-3 bg-background rounded-lg border border-border">
-              <div className="w-24 h-24 flex items-center justify-center">
-                <img src={logo2} alt="" />
-              </div>
-              <div className="-ml-8 pr-4">
-                <span className="font-display font-bold text-foreground">Winmix Essential</span>
-                <p className="text-xs text-muted-foreground ">
-                  {language === 'en' ? 'Trusted Since 2025' : '২০২৫ থেকে বিশ্বস্ত'}
-                </p>
-              </div>
-            </div>
+            <div className="flex gap-3 flex-wrap sm:flex-nowrap">
+  <div className="w-36 h-20 flex items-center justify-center border border-gray-200 rounded-md text-sm font-medium text-gray-800">
+    Purity First
+  </div>
+
+  <div className="w-36 h-20 flex items-center justify-center border border-gray-200 rounded-md text-sm font-medium text-gray-800">
+    Customer Centricity
+  </div>
+
+  <div className="w-36 h-20 flex items-center justify-center border border-gray-200 rounded-md text-sm font-medium text-gray-800">
+    Integrity
+  </div>
+</div>
+
           </motion.div>
 
           {/* Right - Image */}

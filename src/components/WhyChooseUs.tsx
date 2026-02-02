@@ -10,13 +10,13 @@ const features = [
     descEn: 'All products undergo strict quality checks to ensure purity and freshness',
     descBn: 'সমস্ত পণ্য বিশুদ্ধতা এবং সতেজতা নিশ্চিত করতে কঠোর মান পরীক্ষার মধ্য দিয়ে যায়',
   },
-  {
-    icon: LotusIcon,
-    titleEn: 'Natural Ingredients',
-    titleBn: 'প্রাকৃতিক উপাদান',
-    descEn: 'Sourced from trusted suppliers with no artificial additives',
-    descBn: 'কোনো কৃত্রিম সংযোজন ছাড়াই বিশ্বস্ত সরবরাহকারীদের কাছ থেকে সংগ্রহ করা',
-  },
+  // {
+  //   icon: LotusIcon,
+  //   titleEn: 'Natural Ingredients',
+  //   titleBn: 'প্রাকৃতিক উপাদান',
+  //   descEn: 'Sourced from trusted suppliers with no artificial additives',
+  //   descBn: 'কোনো কৃত্রিম সংযোজন ছাড়াই বিশ্বস্ত সরবরাহকারীদের কাছ থেকে সংগ্রহ করা',
+  // },
   {
     icon: TrustIcon,
     titleEn: 'Customer Focus',

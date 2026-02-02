@@ -32,7 +32,7 @@ const CategoryBrowse = () => {
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
             {language === 'en' 
-              ? 'Explore our diverse range of premium quality ingredients for your culinary needs'
+              ? 'Explore our diverse range of premium quality products for your daily needs.'
               : 'আপনার রন্ধনসম্পর্কীয় প্রয়োজনের জন্য আমাদের প্রিমিয়াম মানের উপাদান অন্বেষণ করুন'}
           </p>
         </div>

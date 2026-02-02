@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <p className="text-secondary-foreground/70 text-sm mb-6 leading-relaxed">
               {language === 'en' 
-                ? 'Your trusted partner for premium quality food ingredients. We bring authentic flavors to your kitchen.'
+                ? 'Your Trusted Partner in Quality Food Products'
                 : 'প্রিমিয়াম মানের খাদ্য উপাদানের জন্য আপনার বিশ্বস্ত অংশীদার। আমরা আপনার রান্নাঘরে খাঁটি স্বাদ নিয়ে আসি।'}
             </p>
             <div className="flex gap-3">
