@@ -37,7 +37,7 @@ const BrandSection = () => {
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                 {language === 'en' 
-                  ? 'Premium quality Premium quality food products that brings happiness & goodness in life.'
+                  ? 'Premium quality food products that brings happiness & goodness in life.'
                   : 'প্রিমিয়াম মানের উপাদান যা সাধারণ রান্নাকে অসাধারণ কালিনারি অভিজ্ঞতায় পরিণত করে। প্রতিটি খাবারের জন্য উইনমিক্সের উৎকর্ষের উপর আস্থা রাখুন।'
                 }
               </p>
