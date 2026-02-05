@@ -43,11 +43,11 @@ const ContactPage = () => {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          message: formData.message,
+          message: formData.message,  
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
       );
-
+//che
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
