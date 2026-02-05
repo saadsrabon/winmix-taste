@@ -34,7 +34,7 @@ import ChatMasalaImg from '@/assets/main/chat masala.jpeg';
 import ChocolateFoodColorImg from '@/assets/main/chocolate food color.jpeg';
 import ChocolateFoodEssenceImg from '@/assets/main/chocolate food essence.jpeg';
 import CornflowerImg from '@/assets/main/cornflower.jpeg';
-import GoldTeaImg from '@/assets/main/gold a food essence.jpeg';
+import GoldTeaImg from '@/assets/main/goldteanew.png';
 import GreenColorImg from '@/assets/main/green color.jpeg';
 import KewraWaterGreenImg from '@/assets/main/kewra water green.jpeg';
 import LemonFoodEssenceImg from '@/assets/main/lemon food essence.jpeg';
@@ -54,7 +54,8 @@ import kewraFoodEssenceImg from '@/assets/main/kewra food essence.jpeg';
 import soyaSauceImg from '@/assets/main/soya sao.jpeg';
 import whitePepperImg from '@/assets/main/white pepper.jpeg';
 import whiteVinegarImg from '@/assets/main/white vinegar.jpeg';
-
+import saltImage from '@/assets/main/salt.png';
+import dairy from '@/assets/main/dairy.png';
 // Category icons
 import baking from '@/assets/baking.png';
 import seasoning from '@/assets/featured/seasoning.png';
@@ -63,6 +64,7 @@ import masala from '@/assets/featured/masala.png';
 import foodcolor from '@/assets/featured/foodcolor.png';
 import chocolate from '@/assets/featured/chocolate.png';
 import snacksbeverages from '@/assets/featured/snacks.png';
+
 export const categories: Category[] = [
   {
   id: 'baking',
@@ -141,6 +143,7 @@ export const categories: Category[] = [
     { id: 'kewra-water-green', nameEn: 'Kewra Water', nameBn: 'কেওড়া জল', category: 'seasoning', brand: 'Cookwell', image: KewraWaterGreenImg, price: '৳55' },
     { id: 'soya-sauce', nameEn: 'Soya Sauce', nameBn: 'সয়া সস', category: 'seasoning', brand: 'Cookwell', image: soyaSauceImg, price: '৳75' },
     { id: 'white-vinegar', nameEn: 'White Vinegar', nameBn: 'সাদা ভিনেগার', category: 'seasoning', brand: 'Cookwell', image: whiteVinegarImg, price: '৳55' },
+    { id: 'tasting-salt', nameEn: 'Tasting Salt', nameBn: 'Tasting Salt', category: 'seasoning', brand: 'Cookwell', image: saltImage, price: '৳55' },
   ]
 },
 {
@@ -164,6 +167,7 @@ export const categories: Category[] = [
   icon: chocolate,
   products: [
     { id: 'winmix-choco-choco', nameEn: 'Choco Choco', nameBn: 'চকো চকো', category: 'chocolate', brand: 'Winmix', image: WinmixChocoChocoImg, price: '৳85' },
+    { id: 'dairy', nameEn: 'Winmix Dairy Milk Chocolate Bar', nameBn: 'চকো চকো', category: 'chocolate', brand: 'Winmix', image: dairy, price: '৳85' },
   ]
 },
 {

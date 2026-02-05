@@ -14,7 +14,7 @@ import custardImg from '@/assets/feat/custard.png';
 import sauceImg from '@/assets/feat/sauce.png';
 import tastysaltImg from '@/assets/feat/tastysalt.png';
 import goldteaImage from '@/assets/feat/gold tea.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Create featured products list based on image names from /feat folder
 const featuredProducts = [
@@ -23,66 +23,73 @@ const featuredProducts = [
     nameEn: 'Choco Choco',
     nameBn: 'চকো চকো',
     image: ChocoChocoImg,
+    link: '/products?brand=Winmix&category=chocolate',
   },
   {
     id: 'baking-powder',
     nameEn: 'Baking Powder',
     nameBn: 'বেকিং পাউডার',
     image: bakingpowderImg,
+    link: '/products?brand=Cookwell&category=baking',
   },
-   {
-    id:'goldtea',
-    nameEn:'Gold Tea',
-    nameBn:'রোড টিউ',
-    image:goldteaImage
+  {
+    id: 'goldtea',
+    nameEn: 'Gold Tea',
+    nameBn: 'রোড টিউ',
+    image: goldteaImage,
+    link: '/products?brand=Winmix&category=snacks-beverages',
   },
   {
     id: 'biriyani',
     nameEn: 'Biriyani Masala',
     nameBn: 'বিরিয়ানি মসলা',
     image: biriyaniImg,
+    link: '/products?brand=Cookwell&category=ready-mix-masala',
   },
   {
     id: 'chocolate',
     nameEn: 'Chocolate Essence',
     nameBn: 'চকলেট এসেন্স',
     image: chocolateImg,
+    link: '/products?brand=Cookwell&category=food-essence',
   },
   {
     id: 'cornflower',
     nameEn: 'Corn Flour',
     nameBn: 'কর্ন ফ্লাওয়ার',
     image: cornflowerImg,
+    link: '/products?brand=Cookwell&category=baking',
   },
- 
- 
   {
     id: 'sauce',
     nameEn: 'Special Sauce',
     nameBn: 'বিশেষ সস',
     image: sauceImg,
+    link: '/products?brand=Cookwell&category=seasoning',
   },
   {
     id: 'tastysalt',
     nameEn: 'Tasty Salt',
     nameBn: 'টেস্টি সল্ট',
     image: tastysaltImg,
+    link: '/products?brand=Cookwell&category=seasoning',
   },
   {
     id: 'barbq',
     nameEn: 'BBQ Sauce',
     nameBn: 'বিবিকিউ সস',
     image: barbqImg,
+    link: '/products?brand=Cookwell&category=ready-mix-masala',
   },
-
-  
-   {
+  {
     id: 'custard',
     nameEn: 'Custard Powder',
     nameBn: 'কাস্টার্ড পাউডার',
     image: custardImg,
+    link: '/products?brand=Cookwell&category=baking',
   },
 ];
+
 
 const FeaturedProducts = () => {
   const { language } = useLanguage();
@@ -107,7 +114,7 @@ const FeaturedProducts = () => {
     const interval = setInterval(scroll, 30);
     return () => clearInterval(interval);
   }, [isPaused]);
-
+  const navigate = useNavigate();
   return (
     <section className="py-16 bg-background" id="featured">
       <div className="container-wide">
@@ -150,7 +157,7 @@ const FeaturedProducts = () => {
                   transition={{ duration: 0.4, delay: (index % featuredProducts.length) * 0.05 }}
                   className="group flex-shrink-0 w-1/4"
                 >
-                  <div className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                  <div onClick={()=>navigate(product.link)} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                     {/* Product Image */}
                     <div className="aspect-square bg-muted relative overflow-hidden">
                       <img 
