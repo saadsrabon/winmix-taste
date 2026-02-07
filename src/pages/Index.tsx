@@ -16,8 +16,8 @@ const Index = () => {
         <BrandSection />
         <CulinaryHabitSection />
         <TrustSection />
-        <FeaturedProducts />
         <CategoryBrowse />
+        <FeaturedProducts />
         {/* <ProductsSection /> */}
         <WhyChooseUs />
         {/* <Newsletter /> */}

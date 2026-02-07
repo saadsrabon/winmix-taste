@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.png';
-import heroKitchenBg from '@/assets/hero-kitchen.jpg';
+import heroKitchenBg from '@/assets/hero-kitchen.jpeg';
 
 const BrandSection = () => {
   const { language } = useLanguage();

@@ -54,8 +54,12 @@ import kewraFoodEssenceImg from '@/assets/main/kewra food essence.jpeg';
 import soyaSauceImg from '@/assets/main/soya sao.jpeg';
 import whitePepperImg from '@/assets/main/white pepper.jpeg';
 import whiteVinegarImg from '@/assets/main/white vinegar.jpeg';
-import saltImage from '@/assets/main/salt.png';
+import saltImage from '@/assets/main/salt.jpeg';
 import dairy from '@/assets/main/dairy.png';
+import custurdImage from '@/assets/main/Custard Powder.jpeg'
+import bakingPowder from '@/assets/main/Baking Powder.jpeg'
+import chatpatiMasala from '@/assets/main/Chatpati.jpeg'
+import redColor from '@/assets/main/Red Color.jpeg'
 // Category icons
 import baking from '@/assets/baking.png';
 import seasoning from '@/assets/featured/seasoning.png';
@@ -74,60 +78,12 @@ export const categories: Category[] = [
   descriptionBn: 'বেকিংয়ের প্রয়োজনীয় উপকরণ',
   icon: baking,
   products: [
-    { id: 'agar-agar', nameEn: 'Agar Agar', nameBn: 'আগার আগার', category: 'baking', brand: 'Cookwell', image: AgarAgarImg, price: '৳85' },
-    { id: 'bakingsoda', nameEn: 'Baking Soda', nameBn: 'বেকিং সোডা', category: 'baking', brand: 'Cookwell', image: BakingsodaImg, price: '৳35' },
     { id: 'cornflower', nameEn: 'Cornflower', nameBn: 'কর্নফ্লাওয়ার', category: 'baking', brand: 'Cookwell', image: CornflowerImg, price: '৳45', featured: true },
+    {id:"custurd",nameEn:"Custurd",nameBn:"কাস্টুর্ড",category:"baking",brand:"Cookwell",image:custurdImage,price:"৳45"},
+    { id: 'bakingpowder', nameEn: 'Baking Powder', nameBn: 'বেকিং পাউডার', category: 'baking', brand: 'Cookwell', image: bakingPowder, price: '৳45', featured: true },
+    { id: 'bakingsoda', nameEn: 'Baking Soda', nameBn: 'বেকিং সোডা', category: 'baking', brand: 'Cookwell', image: BakingsodaImg, price: '৳35' },
+    { id: 'agar-agar', nameEn: 'Agar Agar', nameBn: 'আগার আগার', category: 'baking', brand: 'Cookwell', image: AgarAgarImg, price: '৳85' },
     { id: 'yeast', nameEn: 'Yeast', nameBn: 'ইস্ট', category: 'baking', brand: 'Cookwell', image: YeastImg, price: '৳45' },
-  ]
-}
-,{
-  id: 'food-color',
-  nameEn: 'Food Color',
-  nameBn: 'খাদ্য রঙ',
-  descriptionEn: 'Food coloring products',
-  descriptionBn: 'খাদ্য রঙের পণ্য',
-  icon: foodcolor,
-  products: [
-    { id: 'blue-food-color', nameEn: 'Blue Food Color', nameBn: 'নীল খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: BlueFoodColorImg, price: '৳30' },
-    { id: 'chocolate-food-color', nameEn: 'Chocolate Food Color', nameBn: 'চকলেট খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: ChocolateFoodColorImg, price: '৳35' },
-    { id: 'green-color', nameEn: 'Green Food Color', nameBn: 'সবুজ খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: GreenColorImg, price: '৳30' },
-    { id: 'orange-food-color', nameEn: 'Orange Food Color', nameBn: 'কমলা খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: OrangeFoodColorImg, price: '৳35' },
-    { id: 'yellow-food-color', nameEn: 'Yellow Food Color', nameBn: 'হলুদ খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: YellowFoodColorImg, price: '৳30' },
-    { id: 'zarda-color', nameEn: 'Zarda Color', nameBn: 'জর্দা রঙ', category: 'food-color', brand: 'Cookwell', image: ZardaColorImg, price: '৳35' },
-  ]
-},
-{
-  id: 'food-essence',
-  nameEn: 'Food Essence',
-  nameBn: 'ফুড এসেন্স',
-  descriptionEn: 'Aromatic food essences',
-  descriptionBn: 'সুগন্ধি ফুড এসেন্স',
-  icon: foodessene,
-  products: [
-    { id: 'banana-food-essence', nameEn: 'Banana Essence', nameBn: 'কলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: BananaFoodEssenceImg, price: '৳45' },
-    { id: 'biriyani-food-essence', nameEn: 'Biriyani Essence', nameBn: 'বিরিয়ানি এসেন্স', category: 'food-essence', brand: 'Cookwell', image: BiriyaniFoodEssenceImg, price: '৳40', featured: true },
-    { id: 'chocolate-food-essence', nameEn: 'Chocolate Essence', nameBn: 'চকলেট এসেন্স', category: 'food-essence', brand: 'Cookwell', image: ChocolateFoodEssenceImg, price: '৳45' },
-    { id: 'kewra-food-essence', nameEn: 'Kewra Essence', nameBn: 'কেওড়া এসেন্স', category: 'food-essence', brand: 'Cookwell', image: kewraFoodEssenceImg, price: '৳40' },
-    { id: 'lemon-food-essence', nameEn: 'Lemon Essence', nameBn: 'লেবু এসেন্স', category: 'food-essence', brand: 'Cookwell', image: LemonFoodEssenceImg, price: '৳40' },
-    { id: 'mango-food-essence', nameEn: 'Mango Essence', nameBn: 'আম এসেন্স', category: 'food-essence', brand: 'Cookwell', image: MangoFoodEssenceImg, price: '৳45' },
-    { id: 'orange-food-essence', nameEn: 'Orange Essence', nameBn: 'কমলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: OrangeFoodEssenceImg, price: '৳40' },
-    { id: 'polao-food-essence', nameEn: 'Polao Essence', nameBn: 'পোলাও এসেন্স', category: 'food-essence', brand: 'Cookwell', image: PolaoFoodEssenceImg, price: '৳40' },
-    { id: 'strawberry-food-essence', nameEn: 'Strawberry Essence', nameBn: 'স্ট্রবেরি এসেন্স', category: 'food-essence', brand: 'Cookwell', image: StrawberryFoodEssenceImg, price: '৳45' },
-    { id: 'vanilla-food-essence', nameEn: 'Vanilla Essence', nameBn: 'ভ্যানিলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: VanillaFoodEssenceImg, price: '৳45' },
-    { id: 'zafran-food-essence', nameEn: 'Zafran Essence', nameBn: 'জাফরান এসেন্স', category: 'food-essence', brand: 'Cookwell', image: ZafranFoodEssenceImg, price: '৳50' },
-  ]
-},
-{
-  id: 'ready-mix-masala',
-  nameEn: 'Ready-mix Masala',
-  nameBn: 'রেডি মিক্স মসলা',
-  descriptionEn: 'Ready-made spice mixes',
-  descriptionBn: 'রান্নার জন্য প্রস্তুত মসলা',
-  icon: masala,
-  products: [
-    { id: 'bar-b-q-masala', nameEn: 'B-B-Q Masala', nameBn: 'বারবিকিউ মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: BarBQMasalaImg, price: '৳85' },
-    { id: 'biriyani-masala', nameEn: 'Biriyani Masala', nameBn: 'বিরিয়ানি মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: BiriyaniMasalaImg, price: '৳95', featured: true },
-    { id: 'chat-masala', nameEn: 'Chat Masala', nameBn: 'চাট মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: ChatMasalaImg, price: '৳65' },
   ]
 },
 {
@@ -138,14 +94,70 @@ export const categories: Category[] = [
   descriptionBn: 'সিজনিং পণ্য',
   icon: seasoning,
   products: [
+    { id: 'tasting-salt', nameEn: 'Tasting Salt', nameBn: 'Tasting Salt', category: 'seasoning', brand: 'Cookwell', image: saltImage, price: '৳55' },
+    { id: 'soya-sauce', nameEn: 'Soya Sauce', nameBn: 'সয়া সস', category: 'seasoning', brand: 'Cookwell', image: soyaSauceImg, price: '৳75' },
+    { id: 'white-vinegar', nameEn: 'White Vinegar', nameBn: 'সাদা ভিনেগার', category: 'seasoning', brand: 'Cookwell', image: whiteVinegarImg, price: '৳55' },
     { id: 'bit-salt', nameEn: 'Bit Salt', nameBn: 'বিট লবণ', category: 'seasoning', brand: 'Cookwell', image: BitSaltImg, price: '৳25' },
     { id: 'rose-water', nameEn: 'Rose Water', nameBn: 'গোলাপ জল', category: 'seasoning', brand: 'Cookwell', image: RoseWaterImg, price: '৳60' },
     { id: 'kewra-water-green', nameEn: 'Kewra Water', nameBn: 'কেওড়া জল', category: 'seasoning', brand: 'Cookwell', image: KewraWaterGreenImg, price: '৳55' },
-    { id: 'soya-sauce', nameEn: 'Soya Sauce', nameBn: 'সয়া সস', category: 'seasoning', brand: 'Cookwell', image: soyaSauceImg, price: '৳75' },
-    { id: 'white-vinegar', nameEn: 'White Vinegar', nameBn: 'সাদা ভিনেগার', category: 'seasoning', brand: 'Cookwell', image: whiteVinegarImg, price: '৳55' },
-    { id: 'tasting-salt', nameEn: 'Tasting Salt', nameBn: 'Tasting Salt', category: 'seasoning', brand: 'Cookwell', image: saltImage, price: '৳55' },
   ]
 },
+{
+  id: 'food-essence',
+  nameEn: 'Food Essence',
+  nameBn: 'ফুড এসেন্স',
+  descriptionEn: 'Aromatic food essences',
+  descriptionBn: 'সুগন্ধি ফুড এসেন্স',
+  icon: foodessene,
+  products: [
+    { id: 'vanilla-food-essence', nameEn: 'Vanilla Essence', nameBn: 'ভ্যানিলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: VanillaFoodEssenceImg, price: '৳45' },
+    { id: 'chocolate-food-essence', nameEn: 'Chocolate Essence', nameBn: 'চকলেট এসেন্স', category: 'food-essence', brand: 'Cookwell', image: ChocolateFoodEssenceImg, price: '৳45' },
+    { id: 'strawberry-food-essence', nameEn: 'Strawberry Essence', nameBn: 'স্ট্রবেরি এসেন্স', category: 'food-essence', brand: 'Cookwell', image: StrawberryFoodEssenceImg, price: '৳45' },
+    { id: 'banana-food-essence', nameEn: 'Banana Essence', nameBn: 'কলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: BananaFoodEssenceImg, price: '৳45' },
+    { id: 'orange-food-essence', nameEn: 'Orange Essence', nameBn: 'কমলা এসেন্স', category: 'food-essence', brand: 'Cookwell', image: OrangeFoodEssenceImg, price: '৳40' },
+    { id: 'mango-food-essence', nameEn: 'Mango Essence', nameBn: 'আম এসেন্স', category: 'food-essence', brand: 'Cookwell', image: MangoFoodEssenceImg, price: '৳45' },
+    { id: 'lemon-food-essence', nameEn: 'Lemon Essence', nameBn: 'লেবু এসেন্স', category: 'food-essence', brand: 'Cookwell', image: LemonFoodEssenceImg, price: '৳40' },
+    { id: 'biriyani-food-essence', nameEn: 'Biriyani Essence', nameBn: 'বিরিয়ানি এসেন্স', category: 'food-essence', brand: 'Cookwell', image: BiriyaniFoodEssenceImg, price: '৳40', featured: true },
+    { id: 'polao-food-essence', nameEn: 'Polao Essence', nameBn: 'পোলাও এসেন্স', category: 'food-essence', brand: 'Cookwell', image: PolaoFoodEssenceImg, price: '৳40' },
+    { id: 'zafran-food-essence', nameEn: 'Zafran Essence', nameBn: 'জাফরান এসেন্স', category: 'food-essence', brand: 'Cookwell', image: ZafranFoodEssenceImg, price: '৳50' },
+    { id: 'kewra-food-essence', nameEn: 'Kewra Essence', nameBn: 'কেওড়া এসেন্স', category: 'food-essence', brand: 'Cookwell', image: kewraFoodEssenceImg, price: '৳40' },
+  ]
+},
+{
+  id: 'food-color',
+  nameEn: 'Food Color',
+  nameBn: 'খাদ্য রঙ',
+  descriptionEn: 'Food coloring products',
+  descriptionBn: 'খাদ্য রঙের পণ্য',
+  icon: foodcolor,
+  products: [
+    { id: 'chocolate-food-color', nameEn: 'Chocolate Food Color', nameBn: 'চকলেট খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: ChocolateFoodColorImg, price: '৳35' },
+    { id: 'orange-food-color', nameEn: 'Orange Food Color', nameBn: 'কমলা খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: OrangeFoodColorImg, price: '৳35' },
+    { id: 'yellow-food-color', nameEn: 'Yellow Food Color', nameBn: 'হলুদ খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: YellowFoodColorImg, price: '৳30' },
+    { id: 'red-food-color', nameEn: 'Red Food Color', nameBn: 'খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: redColor, price: '৳30' },
+    
+    { id: 'green-color', nameEn: 'Green Food Color', nameBn: 'সবুজ খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: GreenColorImg, price: '৳30' },
+    { id: 'blue-food-color', nameEn: 'Blue Food Color', nameBn: 'নীল খাদ্য রঙ', category: 'food-color', brand: 'Cookwell', image: BlueFoodColorImg, price: '৳30' },
+    { id: 'zarda-color', nameEn: 'Zarda Color', nameBn: 'জর্দা রঙ', category: 'food-color', brand: 'Cookwell', image: ZardaColorImg, price: '৳35' },
+  ]
+},
+
+{
+  id: 'ready-mix-masala',
+  nameEn: 'Ready-mix Masala',
+  nameBn: 'রেডি মিক্স মসলা',
+  descriptionEn: 'Ready-made spice mixes',
+  descriptionBn: 'রান্নার জন্য প্রস্তুত মসলা',
+  icon: masala,
+  products: [
+    { id: 'biriyani-masala', nameEn: 'Biriyani Masala', nameBn: 'বিরিয়ানি মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: BiriyaniMasalaImg, price: '৳95', featured: true },
+    { id: 'bar-b-q-masala', nameEn: 'B-B-Q Masala', nameBn: 'বারবিকিউ মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: BarBQMasalaImg, price: '৳85' },
+    { id: 'chat-masala', nameEn: 'Chat Masala', nameBn: 'চাট মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: ChatMasalaImg, price: '৳65' },
+    { id: 'chat-pati-masala', nameEn: 'Chatpati Masala', nameBn: 'চটপটি মসলা', category: 'ready-mix-masala', brand: 'Cookwell', image: chatpatiMasala, price: '৳65' },
+
+  ]
+},
+
 {
   id: 'spices',
   nameEn: 'Spices',
@@ -178,7 +190,7 @@ export const categories: Category[] = [
   descriptionBn: 'পানীয়',
   icon: snacksbeverages,
   products: [
-    { id: 'gold-tea', nameEn: 'Winmix Gold Tea 400gm', nameBn: 'উইনমিক্স গোল্ড টি', category: 'snacks-beverages', brand: 'Winmix', image: GoldTeaImg, price: '৳150', featured: true },
+    { id: 'gold-tea', nameEn: 'Winmix Gold Tea', nameBn: 'উইনমিক্স গোল্ড টি', category: 'snacks-beverages', brand: 'Winmix', image: GoldTeaImg, price: '৳150', featured: true },
   ]
 }
 
