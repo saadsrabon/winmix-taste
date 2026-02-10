@@ -155,7 +155,7 @@ const FeaturedProducts = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: (index % featuredProducts.length) * 0.05 }}
-                  className="group flex-shrink-0 w-1/4"
+                  className="group flex-shrink-0 w-1/2   md:w-1/4"
                 >
                   <div onClick={()=>navigate(product.link)} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                     {/* Product Image */}
