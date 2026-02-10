@@ -166,7 +166,7 @@ const FeaturedProducts = () => {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       {/* Badge */}
-                      <div className="absolute top-2 left-2">
+                      <div className="absolute top-0 md:top-2 left-2">
                         <span className="px-2 py-1 text-xs font-medium bg-primary text-primary-foreground rounded">
                           {language === 'en' ? 'Featured' : 'বৈশিষ্ট্যযুক্ত'}
                         </span>
