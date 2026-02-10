@@ -171,7 +171,7 @@ const [showAll, setShowAll] = useState(false);
 
         {/* Category Tabs (brand-aware) */}
         <Tabs value={activeCategory} onValueChange={setActiveCategory}>
-          <div className="md:flex md:justify-center mb-8 overflow-x-auto scroll-smooth no-scrollbar">
+          <div className="md:flex md:justify-center mb-8 overflow-x-auto scroll-smooth ">
             <TabsList className="bg-muted/50 p-1 rounded-full">
               <TabsTrigger value="all" className="rounded-full px-6">
                 {language === 'en' ? 'All Items' : 'সব পণ্য'}
