@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { LotusIcon, GoodnessIcon, TrustIcon, DelicacyIcon } from '@/components/icons/CustomIcons';
 import { Link } from 'react-router-dom';
 import professionalChef from '@/assets/professional-chef.jpg';
-import qualitySpices from '@/assets/quality-spices.jpg';
+import qualitySpices from '@/assets/quality-spices.jpeg';
 import TrustSection from '@/components/TrustSection';
 
 const features = [

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
-import qualitySpicesImg from '@/assets/quality-spices.jpg';
+import qualitySpicesImg from '@/assets/quality-spices.jpeg';
 import logo2 from '@/assets/lgog2.png';
 // const stats = [
 //   { valueEn: '15+', valueBn: '১৫+', labelEn: 'Years Experience', labelBn: 'বছরের অভিজ্ঞতা' },
@@ -73,7 +73,7 @@ const TrustSection = () => {
               <img 
                 src={qualitySpicesImg} 
                 alt={language === 'en' ? 'Quality spices' : 'মানসম্মত মশলা'}
-                className="w-full h-80 lg:h-96 object-cover"
+                className="w-full h-80 lg:h-96 object-full"
               />
             </div>
             {/* Decorative Element */}
